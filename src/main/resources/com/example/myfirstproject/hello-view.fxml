@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" stylesheets="@../../../../java/com/example/myfirstproject/my.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myfirstproject.InterfaceController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" stylesheets="@my.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myfirstproject.InterfaceController">
    <children>
-      <HBox prefHeight="100.0" prefWidth="600.0" stylesheets="@/com/example/myfirstproject/my.css">
+      <HBox prefHeight="100.0" prefWidth="600.0" stylesheets="@my.css">
 
    <children>
             <Button id="bnAdd" fx:id="btnAdd" maxHeight="300.0" mnemonicParsing="false" onAction="#showDialog" prefHeight="40.0" prefWidth="140.0" text="Добавити">
@@ -46,7 +46,7 @@
             <Insets left="30.0" right="30.0" />
          </VBox.margin>
          <children>
-            <TableView fx:id="tableAddressBook" layoutX="26.0" layoutY="14.0" prefHeight="224.0" prefWidth="251.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <TableView fx:id="tableAddressBook" layoutX="26.0" layoutY="14.0" prefHeight="224.0" prefWidth="251.0" stylesheets="@my.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
               <columns>
                 <TableColumn prefWidth="259.0" text="ПІП" />
                 <TableColumn prefWidth="280.0" text="Телефон" />
@@ -59,7 +59,7 @@
             <Insets bottom="30.0" left="30.0" right="30.0" />
          </VBox.margin>
          <children>
-            <Label fx:id="labelCount" layoutX="21.0" layoutY="46.0" text="Кількість записів:" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+            <Label id="label1" fx:id="labelCount" layoutX="21.0" layoutY="46.0" stylesheets="@my.css" text="Кількість записів:" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
          </children>
       </AnchorPane>
    </children>

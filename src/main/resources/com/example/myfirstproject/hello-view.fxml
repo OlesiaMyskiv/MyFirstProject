@@ -60,6 +60,7 @@
          </VBox.margin>
          <children>
             <Label id="label1" fx:id="labelCount" layoutX="21.0" layoutY="46.0" stylesheets="@my.css" text="Кількість записів:" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+            <Button fx:id="btnOtherLabs" layoutX="400.0" layoutY="71.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="140.0" text="Інші практичні" onAction="#choosePage" />
          </children>
       </AnchorPane>
    </children>

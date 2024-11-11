@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -23,6 +24,8 @@ public class InterfaceController {
     private TextField txtSearch;
     @FXML
     private Label labelCount;
+    @FXML
+    private Button btnOtherLabs;
 
     @FXML
     void showDialog(ActionEvent event) {
@@ -65,6 +68,24 @@ public class InterfaceController {
             this.btnDelete.setText("Відмінено!");
         } else {
             this.btnDelete.setText("-");
+        }
+    }
+
+    @FXML
+    void choosePage(ActionEvent event) {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/myfirstproject/otherLabs.fxml"));
+
+        try {
+            Stage stage = new Stage();
+            Scene scene = new Scene(fxmlLoader.load(), 600, 600);
+            stage.setScene(scene);
+
+            stage.setTitle("Інші практичні");
+            stage.setResizable(false);
+            stage.initModality(Modality.WINDOW_MODAL);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

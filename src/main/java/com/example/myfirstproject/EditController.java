@@ -1,6 +1,8 @@
 package com.example.myfirstproject;
 
 
-public class EditController {
+import javafx.fxml.FXML;
+import javafx.scene.layout.BorderPane;
 
+public class EditController {
 }

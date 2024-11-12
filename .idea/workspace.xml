@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c20838ad-07a9-4b8e-ba57-7851513ace5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/myfirstproject/OtherLabsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/myfirstproject/otherLabs.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/myfirstproject/AddressBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/myfirstproject/CollectionAddressBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/myfirstproject/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myfirstproject/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myfirstproject/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myfirstproject/InterfaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myfirstproject/InterfaceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/myfirstproject/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/myfirstproject/hello-view.fxml" afterDir="false" />
     </list>
@@ -22,6 +24,7 @@
         <option value="JavaFXApplication" />
         <option value="CSS File" />
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -56,6 +59,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.myfirstproject" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/myfirstproject" />
     </key>

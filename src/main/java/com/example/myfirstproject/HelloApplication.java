@@ -19,8 +19,13 @@ public class HelloApplication extends Application {
 
         stage.setScene(scene);
         stage.show();
+        testData();
     }
-
+    private void testData(){
+        CollectionAddressBook addressBook = new CollectionAddressBook();
+        addressBook.fillTestData();
+        addressBook.print();
+    }
     public static void main(String[] args) {
         launch();
     }

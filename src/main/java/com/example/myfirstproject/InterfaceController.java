@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -79,23 +80,29 @@ public class InterfaceController {
         }
     }
 
-    @FXML
-    void choosePage(ActionEvent event) {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/myfirstproject/otherLabs.fxml"));
-
+    // Метод для відкриття нового вікна при натисканні кнопки
+    // Метод для відкриття нового вікна при натисканні кнопки
+    public void choosePage(ActionEvent event) {
         try {
-            Stage stage = new Stage();
-            Scene scene = new Scene(fxmlLoader.load(), 600, 600);
-            stage.setScene(scene);
+            // Завантажуємо FXML файл для лабораторних
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/myfirstproject/allLabs.fxml"));
+            VBox otherLabsPage = loader.load();  // Використовуємо VBox, а не AnchorPane
 
-            stage.setTitle("Інші практичні");
-            stage.setResizable(false);
-            stage.initModality(Modality.WINDOW_MODAL);
-            stage.show();
-        } catch (IOException e) {
+            // Створюємо нову сцену з цією панеллю
+            Scene scene = new Scene(otherLabsPage);
+
+            // Створюємо нове вікно
+            Stage newStage = new Stage();
+            newStage.setTitle("Інші практичні");
+            newStage.setScene(scene);
+
+            // Показуємо нове вікно
+            newStage.show();
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
     @FXML
     public void initialize() {
         columnPIP.setCellValueFactory(new PropertyValueFactory<Person, String>("PIP"));

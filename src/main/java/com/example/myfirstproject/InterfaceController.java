@@ -88,6 +88,7 @@ public class InterfaceController {
             switch (clickedButton.getId()) {
                 case "buttonAdd":
                     editController.setPerson(new Person("",""));
+
                     stage.setTitle("Додати контакт");
                     break;
                 case "buttonEdit":

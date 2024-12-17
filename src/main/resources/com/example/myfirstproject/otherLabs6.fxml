@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="300.0" maxWidth="600.0" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myfirstproject.OtherLabs6Controller">
+   <children>
+      <!-- Верхня частина: Назва пісні -->
+      <VBox layoutY="6.0" prefHeight="220.0" prefWidth="690.0">
+         <children>
+            <Label fx:id="label_audio" text="Audio Player">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <!-- Прогрес бар -->
+            <ProgressBar fx:id="audioProgress" prefHeight="20.0" prefWidth="670.0" progress="0.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ProgressBar>
+         </children>
+      </VBox>
+
+      <!-- Нижня частина: кнопки управління -->
+      <HBox layoutY="226.0" prefHeight="74.0" prefWidth="690.0">
+         <children>
+            <!-- Кнопка PLAY -->
+            <Button fx:id="playButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="90.0" text="PLAY" onAction="#play">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+
+            <!-- Кнопка PAUSE -->
+            <Button fx:id="pauseButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="90.0" text="PAUSE" onAction="#pause">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+
+            <!-- Кнопка NEXT -->
+            <Button fx:id="nextButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="90.0" text="NEXT" onAction="#next">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+
+            <!-- Кнопка PREVIOUS -->
+            <Button fx:id="previousButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="90.0" text="PREVIOUS" onAction="#previous">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+
+            <!-- Слайдер Гучності -->
+            <Slider fx:id="volume" prefHeight="16.0" prefWidth="234.0" value="50.0">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="25.0" />
+               </HBox.margin>
+            </Slider>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

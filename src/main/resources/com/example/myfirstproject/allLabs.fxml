@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myfirstproject.AllLabsController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@my.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myfirstproject.AllLabsController">
    <children>
       <HBox prefHeight="84.0" prefWidth="600.0">
          <children>
@@ -21,7 +21,7 @@
             </Label>
          </children>
       </HBox>
-      <HBox prefHeight="151.0" prefWidth="600.0">
+      <HBox prefHeight="74.0" prefWidth="600.0">
          <children>
             <Button fx:id="butOne" mnemonicParsing="false" onAction="#choosePageOne" prefHeight="40.0" prefWidth="106.0" text="1">
                <HBox.margin>
@@ -33,9 +33,28 @@
                   <Insets left="50.0" right="50.0" top="10.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="butThree" mnemonicParsing="false" prefHeight="40.0" prefWidth="106.0" text="3">
+            <Button fx:id="butThree" mnemonicParsing="false" onAction="#choosePageThree" prefHeight="40.0" prefWidth="106.0" text="3">
                <HBox.margin>
                   <Insets left="50.0" right="50.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="butFour" mnemonicParsing="false" onAction="#choosePageFour" prefHeight="40.0" prefWidth="106.0" text="4">
+               <HBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="butFive" mnemonicParsing="false" onAction="#choosePageFive" prefHeight="40.0" prefWidth="106.0" text="5">
+               <HBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="butSix" mnemonicParsing="false" onAction="#choosePageSix" prefHeight="40.0" prefWidth="106.0" text="6">
+               <HBox.margin>
+                  <Insets left="50.0" right="50.0" />
                </HBox.margin>
             </Button>
          </children>

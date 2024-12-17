@@ -1,31 +1,45 @@
 package com.example.myfirstproject;
 
+import javafx.beans.property.SimpleStringProperty;
+
 public class Person {
-    private String PIP;
+    private SimpleStringProperty pip = new SimpleStringProperty("");
+    private SimpleStringProperty phone = new SimpleStringProperty("");
 
-    private String Phone;
-
-    public String getPIP() {
-        return PIP;
+    public Person(String pip, String phone) {
+        this.pip = new SimpleStringProperty(pip);
+        this.phone = new SimpleStringProperty(phone);
     }
 
-    public void setPIP(String PIP) {
-        this.PIP = PIP;
+    public String getPip() {
+        return pip.get();
+    }
+
+    public SimpleStringProperty pipProperty() {
+        return pip;
+    }
+
+    public void setPip(String pip) {
+        this.pip.set(pip);
     }
 
     public String getPhone() {
-        return Phone;
+        return phone.get();
+    }
+
+    public SimpleStringProperty phoneProperty() {
+        return phone;
     }
 
     public void setPhone(String phone) {
-        Phone = phone;
+        this.phone.set(phone);
     }
 
-
-    public Person(String PIP, String phone) {
-        this.PIP = PIP;
-        Phone = phone;
+    @Override
+    public String toString() {
+        return "Person{" +
+                "pip=" + pip +
+                ", phone=" + phone +
+                '}';
     }
-
-
 }

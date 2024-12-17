@@ -62,6 +62,7 @@ public class OtherLabs1Controller {
         choiceB.getItems().addAll("Правильно" , "Неправильно");
         comboBox.getItems().addAll("BorderPane", "AncorePane", "VBox", "HBox");
 
+
         radiotoggleGroup = new ToggleGroup () ;
         this.radioProp.setToggleGroup (radiotoggleGroup) ;
         this.radioLay.setToggleGroup (radiotoggleGroup);
@@ -80,6 +81,11 @@ public class OtherLabs1Controller {
     }
 
     @FXML
+    void handlechoiceBoxAnswer (ActionEvent event) {
+        lblAnswerChoise.setText("Відповідь: " + choiceB.getValue().toString());
+    }
+
+    @FXML
     void checkBoxAnswer(ActionEvent event) {
         String answer = "Ваша відповідь:";
         if (ChBPogod.isSelected())
@@ -93,15 +99,12 @@ public class OtherLabs1Controller {
 
         this.lblTrueAnswer.setText(answer);
     }
-    @FXML
-    void handlechoiceBoxAnswer (ActionEvent event) {
-        lblAnswerChoise.setText("Відповідь: " + choiceB.getValue().toString());
-    }
+
 
     @FXML
     void RadioAnswer(ActionEvent event) {
         if (this.radiotoggleGroup.getSelectedToggle().equals(this.radioCode))
-             lblRadio.setText("Відповідь: Code");
+            lblRadio.setText("Відповідь: Code");
         if (this.radiotoggleGroup.getSelectedToggle().equals(this.radioHier))
             lblRadio.setText("Відповідь: Hierarchy");
         if (this.radiotoggleGroup.getSelectedToggle().equals(this.radioLay))
@@ -109,4 +112,5 @@ public class OtherLabs1Controller {
         if (this.radiotoggleGroup.getSelectedToggle().equals(this.radioProp))
             lblRadio.setText ("Відповідь: Properties");
     }
+
 }

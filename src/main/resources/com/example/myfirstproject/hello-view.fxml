@@ -15,17 +15,17 @@
       <HBox prefHeight="100.0" prefWidth="600.0" stylesheets="@my.css">
 
    <children>
-            <Button id="bnAdd" fx:id="btnAdd" maxHeight="300.0" mnemonicParsing="false" onAction="#showDialog" prefHeight="40.0" prefWidth="140.0" text="Добавити">
+            <Button id="bnAdd" fx:id="buttonAdd" maxHeight="300.0" mnemonicParsing="false" onAction="#openWindow" prefHeight="40.0" prefWidth="140.0" text="Добавити">
                <HBox.margin>
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="btnEdit" maxHeight="300.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="Редагувати">
+            <Button fx:id="buttonEdit" maxHeight="300.0" mnemonicParsing="false" onAction="#openWindowEdit" prefHeight="40.0" prefWidth="140.0" text="Редагувати">
                <HBox.margin>
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="btnDelete" maxHeight="300.0" mnemonicParsing="false" onAction="#handleDeleteButtonAction" prefHeight="40.0" prefWidth="140.0" text="Видалити">
+            <Button fx:id="remove" maxHeight="300.0" mnemonicParsing="false" onAction="#deleteContact" prefHeight="40.0" prefWidth="140.0" text="Видалити">
                <HBox.margin>
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
                </HBox.margin>
@@ -37,8 +37,8 @@
             <Insets left="30.0" right="30.0" />
          </VBox.margin>
          <children>
-            <TextField id="txtField" fx:id="txtSearch" layoutY="30.0" prefHeight="40.0" prefWidth="310.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="230.0" />
-            <Button fx:id="btnSearch" layoutX="400.0" layoutY="30.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="Пошук" AnchorPane.rightAnchor="0.0" />
+            <TextField id="txtField" fx:id="textField" layoutY="30.0" prefHeight="40.0" prefWidth="310.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="230.0" />
+            <Button fx:id="btnSearch" layoutX="400.0" layoutY="30.0" mnemonicParsing="false" onAction="#searchContact" prefHeight="40.0" prefWidth="140.0" text="Пошук" AnchorPane.rightAnchor="0.0" />
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="300.0" prefWidth="600.0">
@@ -48,8 +48,8 @@
          <children>
             <TableView fx:id="tableAddressBook" layoutX="26.0" layoutY="14.0" prefHeight="224.0" prefWidth="251.0" stylesheets="@my.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
               <columns>
-                <TableColumn fx:id="columnPIP" prefWidth="259.0" text="ПІП" />
-                <TableColumn fx:id="columnPhone" prefWidth="280.0" text="Телефон" />
+                <TableColumn fx:id="nameColumn" prefWidth="259.0" text="ПІП" />
+                <TableColumn fx:id="columnNumber" prefWidth="280.0" text="Телефон" />
               </columns>
             </TableView>
          </children>

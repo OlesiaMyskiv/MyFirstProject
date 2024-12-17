@@ -1,7 +1,7 @@
 package com.example.myfirstproject;
 
 public interface AddressBook {
-    void add (Person person);
-    void update (Person person);
-    void delete (Person person) ;
+    void add(Person person);
+    void edit(Person person);
+    void delete(Person person);
 }

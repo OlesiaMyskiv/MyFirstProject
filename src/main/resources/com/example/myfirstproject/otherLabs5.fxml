@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myfirstproject.OtherLabs5Controller">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="300.0" fitWidth="600.0" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button fx:id="pauseButton" layoutX="406.0" layoutY="325.0" mnemonicParsing="false" onAction="#pauseButton_method" prefHeight="50.0" prefWidth="140.0" text="PAUSE" />
+      <Button fx:id="resetButton" layoutX="229.0" layoutY="326.0" mnemonicParsing="false" onAction="#resetButton_method" prefHeight="50.0" prefWidth="140.0" text="RESET" />
+      <Button fx:id="playButton" layoutX="55.0" layoutY="327.0" mnemonicParsing="false" onAction="#playButton_method" prefHeight="50.0" prefWidth="140.0" text="PLAY">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Button>
+   </children>
+</AnchorPane>

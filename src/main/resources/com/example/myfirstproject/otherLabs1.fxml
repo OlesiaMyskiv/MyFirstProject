@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myfirstproject.OtherLabs1Controller">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1000.0" stylesheets="@my.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myfirstproject.OtherLabs1Controller">
    <children>
       <VBox prefHeight="400.0" prefWidth="250.0">
          <children>
@@ -54,7 +54,7 @@
                   <Insets bottom="5.0" left="10.0" />
                </VBox.margin>
             </CheckBox>
-            <Button fx:id="answerButton" mnemonicParsing="false" text="Відповісти">
+            <Button fx:id="answerButton" mnemonicParsing="false" onAction="#checkBoxAnswer" text="Відповісти">
                <VBox.margin>
                   <Insets bottom="20.0" left="90.0" right="40.0" top="20.0" />
                </VBox.margin>
@@ -86,14 +86,14 @@
                   <Insets left="55.0" />
                </VBox.margin>
             </ChoiceBox>
-            <Button mnemonicParsing="false" onAction="#choiceBoxAnswer" text="Відповісти">
+            <Button mnemonicParsing="false" onAction="#handlechoiceBoxAnswer" text="Відповісти">
                <VBox.margin>
                   <Insets left="95.0" top="30.0" />
                </VBox.margin>
             </Button>
             <Label fx:id="lblAnswerChoise" text="Label">
                <VBox.margin>
-                  <Insets left="10.0" top="70.0" />
+                  <Insets left="10.0" top="40.0" />
                </VBox.margin>
             </Label>
          </children></VBox>
@@ -119,7 +119,7 @@
             </ComboBox>
             <Label fx:id="lblAnwerCombo" text="Label">
                <VBox.margin>
-                  <Insets left="10.0" top="80.0" />
+                  <Insets left="10.0" top="30.0" />
                </VBox.margin>
             </Label>
          </children></VBox>
@@ -138,29 +138,29 @@
                   <Insets left="10.0" />
                </VBox.margin>
             </Label>
-            <RadioButton fx:id="radioProp" mnemonicParsing="false" text="Properties">
+            <RadioButton fx:id="radioProp" mnemonicParsing="false" onAction="#RadioAnswer" text="Properties">
                <VBox.margin>
                   <Insets bottom="5.0" left="10.0" top="5.0" />
                </VBox.margin>
             </RadioButton>
-            <RadioButton fx:id="radioLay" mnemonicParsing="false" text="Layout">
+            <RadioButton fx:id="radioLay" mnemonicParsing="false" onAction="#RadioAnswer" text="Layout">
                <VBox.margin>
                   <Insets bottom="5.0" left="10.0" />
                </VBox.margin>
             </RadioButton>
-            <RadioButton fx:id="radioCode" mnemonicParsing="false" text="Code">
+            <RadioButton fx:id="radioCode" mnemonicParsing="false"  onAction="#RadioAnswer" text="Code">
                <VBox.margin>
                   <Insets bottom="5.0" left="10.0" />
                </VBox.margin>
             </RadioButton>
-            <RadioButton fx:id="radioHier" mnemonicParsing="false" text="Hierarchy">
+            <RadioButton fx:id="radioHier" mnemonicParsing="false" onAction="#RadioAnswer" text="Hierarchy">
                <VBox.margin>
                   <Insets left="10.0" right="5.0" />
                </VBox.margin>
             </RadioButton>
             <Label fx:id="lblRadio" text="Label">
                <VBox.margin>
-                  <Insets top="60.0" />
+                  <Insets top="30.0" />
                </VBox.margin>
             </Label>
          </children>
